@@ -108,6 +108,8 @@ ul {
   background: var(--color-3);
 }
 
+
+
 .daterange {
   display: grid;
   grid-template-columns: 1fr 1fr;
