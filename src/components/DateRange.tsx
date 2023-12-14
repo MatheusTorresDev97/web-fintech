@@ -1,12 +1,11 @@
-import { useState } from "react";
+import { useData } from "../hooks/useDataContext";
 import DateInput from "./DateInput";
 
 const DateRange = () => {
-  const [inicio, setInicio] = useState("");
-  const [final, setFinal] = useState("");
+  const { inicio, setInicio, final, setFinal } = useData();
 
   return (
-    <form className="box flex"  onSubmit={(e) => e.preventDefault()}>
+    <form className="box flex" onSubmit={(e) => e.preventDefault()}>
       <DateInput
         label="Início"
         value={inicio}
